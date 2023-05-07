@@ -1,0 +1,5 @@
+---
+- name: servers_update
+  hosts: servers
+  roles:
+        - sysupdate

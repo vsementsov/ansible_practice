@@ -1,0 +1,7 @@
+[servers]
+alma_test1 ansible_host=192.168.238.135 
+
+[servers:vars]
+ansible_user=root
+ansible_ssh_private_key_file=/home/valeriy/.ssh/id_rsa
+

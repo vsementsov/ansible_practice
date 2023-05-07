@@ -1,0 +1,13 @@
+---
+# tasks file for sysupdate
+
+  - name: Update
+    yum:
+      name: '*'
+      state: latest
+      exclude: vim
+      update_cache: yes
+    register: check_update
+  - name : Reboot
+    reboot:
+    when: check_update.changed
